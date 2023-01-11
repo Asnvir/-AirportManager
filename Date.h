@@ -1,0 +1,23 @@
+#ifndef __MYDATE__
+#define __MYDATE__
+
+#define MIN_YEAR 2022
+
+typedef struct {
+    int day;
+    int month;
+    int year;
+} Date;
+
+void getCorrectDate(Date *pDate);
+
+int checkDate(char *date, Date *pDate);
+
+void printDate(void *pDate);
+
+
+int makeIntFromDate(Date *date); //TODO function for formating date to INTEGER
+int compareDates(const void *newDateVoid, const void *existDateVoid);
+
+
+#endif
